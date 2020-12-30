@@ -1,0 +1,345 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif; /*características de google fonts que se aplican a todo la pagina*/
+  font-family: 'Noto Serif', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+/*TAMAÑO CELULAR*/
+
+header{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: rgb(44, 62, 80);
+}
+
+.logo{
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  width: 94%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+nav{
+  display: none;
+}
+
+.titulo{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  color: white;
+  align-self: center;
+}
+
+.hamburguesa{
+  width: 20%;
+  height: 100%;
+  display: flex;
+}
+
+.hamburguesa i{
+  color: white;
+  font-size: 2em;
+  align-self: center;
+}
+
+main{
+  background-color: rgb(174, 182, 191);
+  display: flex;
+  flex-direction: column;
+}
+
+.banner{
+  display: none;
+}
+
+.tituloBanner{
+  display: none;
+}
+
+.seccion2{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.area_reg{
+  display: none;
+}
+
+.seccion2 p{
+  text-align: justify;
+  padding: 30px;
+}
+
+.titulo_Aejercicio{
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(44, 62, 80);
+}
+
+.titulo_Aejercicio h3{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.reg{display:none;
+}
+
+.seccion4{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.a_ej{
+  width: 100%;
+  height: 33%;
+  border-bottom: 3px solid white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.imagenes{
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.img{
+  height: 180px;
+  width: 180px;
+  border-radius: 30%;
+  border: 5px solid black;
+}
+
+.tit_lista{
+  padding-left: 40px;
+}
+
+.seccion4 h4{
+  text-decoration: underline;
+}
+
+footer{
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(44, 62, 80);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.redes{
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.faceig{
+  height: 35px;
+  width: 35px;
+  border-radius: 30%;
+}
+
+  /*TAMAÑO TABLET*/
+
+@media (min-width: 600px) {
+  .facet_sidebar {
+  display: none;
+  }
+
+ .titulo{
+   display: none;
+ }
+
+ header{
+   justify-content: space-between;
+  }
+
+ nav{
+   display: none;
+  }
+
+.banner{
+   display: flex;
+   width: 100%;
+   height: 50vh;
+  }
+
+ .bannerimg{
+   width: 100%;
+   height: 100%;
+   border-bottom: 5px solid white;
+  }
+
+ .banner img{
+  width: 100%;
+  height: 100% ;
+ }
+
+ .tituloBanner{
+    width: 70%;
+    z-index: 2;
+    position: absolute;
+    top:50%;
+    left:45%;
+    display: block;
+  }
+
+  .tituloBanner h1{
+    color: black;
+    font-size: 2em;
+  }
+
+  .seccion2{
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .seccion2 p{
+    padding-top: 50px;
+  }
+
+  .area_reg{
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgb(44, 62, 80);
+    border: 5px solid white;
+  }
+
+  .reg{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .usuario{
+   font-size: x-small;
+   display: flex;
+   flex-direction: column;
+ }
+
+  .reg label{
+    align-self: center;
+     padding-top: 10px;
+     color: white;
+  }
+
+ .reg input{
+    width: 60%;
+    align-self: center;
+  }
+
+  .butt{
+    align-self: center;
+    padding-top: 10px;
+ }
+
+ .butt button{
+   font-size: 10px;
+   font-weight: bold;
+ }
+
+
+ .registrarse{
+   font-size: x-small;
+   align-self: center;
+   padding-top: 10px;
+ }
+
+ .titulo_Aejercicio{
+   width: 100%;
+   height: 9vh;
+   margin-top: 15px;
+ }
+
+.imagenes{
+  padding-left: 100px;
+}
+
+}
+
+  /*TAMAÑO PC*/
+
+@media (min-width: 1020px) {
+  .hamburguesa{
+    display: none;
+  }
+
+  .titulo{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-top: 50px;
+  }
+
+  nav .pestaña{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  nav .pestaña a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .banner{
+    width: 100%;
+    height: 70vh;
+  }
+
+  .tituloBanner{
+    top:60%;
+    left:50%;
+  }
+
+  .tituloBanner h1{
+    font-size: 3em;
+  }
+
+  .seccion2{
+    height: 20vh;
+  }
+  .seccion2 p{
+    padding-top: 20px;
+  }
+
+  .area_reg{
+    height: 25vh;
+  }
+
+}
